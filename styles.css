@@ -7,48 +7,56 @@
 
 .box1 {
     background-color: lightblue;
+    transition: transform 2s ease;
 }
 
-/* .box1:hover {
+ .box1:hover {
     background-color: lightcoral;
-} */
+    transform: rotate3d(1,16,12, 20deg);
+} 
 
 .box2 {
     background-color: lightgreen;
+    transition: transform 3s ease;
+
 }
 
-/* .box2:hover {
+ .box2:hover {
     transform: rotate(45deg);
-} */
+    transform: translate(100px);
+
+} 
 
 .box3 {
     background-color: rgb(246, 246, 156);
+    transition: all 1s ease;
+
 }
 
-/* .box3:hover {
+.box3:hover {
     width: 200px;
     height: 200px;
     background-color: lightsalmon;
-} */
+} 
 
 .box4 {
     background-color: lightcyan;
-    transition: transform 50s ease;
+    transition: transform 1.5s ease;
 }
 
 .box4:hover {
-    transform: translateX(200px);
+    transform: translate(1000px, 100px);
 }
 
 .box5 {
     background-color: lightpink;
 }
 
-/* .box5:hover {
+.box5:hover {
     width: 200px;
     height: 200px;
     background-color: lightseagreen;
-} */
+} 
 
 p {
     font-size: 20px;
@@ -59,3 +67,57 @@ p {
     background-color: black;
     margin: 20px;
 }
+
+.navbar {
+    background-color: #3498db;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #2980b9;
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  a {
+    flex: 1;
+    background-color: #2980b9;
+
+    color: #fff;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+  
+  a:hover,
+  a:focus {
+    background-color: #fff;
+    color: #005fee;
+  }

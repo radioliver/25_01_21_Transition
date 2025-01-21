@@ -1,0 +1,105 @@
+.box {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 12px;
+    background-color: orange;
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+/* Different timing functions for each box */
+.box1 {
+    transition-timing-function: ease;
+}
+
+.box2 {
+    transition-timing-function: linear;
+}
+
+.box3 {
+    transition-timing-function: ease-in;
+}
+
+.box4 {
+    transition-timing-function: ease-out;
+}
+
+.box5 {
+    transition-timing-function: ease-in-out;
+}
+
+.box6 {
+    transition-timing-function: step-start;
+}
+
+.box7 {
+    transition-timing-function: step-end;
+}
+
+.box8 {
+    transition-timing-function: steps(5, end);
+}
+
+.box9 {
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+/* styles while hovering elements */
+.box:hover {
+    width: 500px;
+}
+
+.navbar {
+    background-color: #3498db;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #2980b9;
+    border-radius: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  a {
+    flex: 1;
+    background-color: #2980b9;
+
+    color: #fff;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+  }
+  
+  a:hover,
+  a:focus {
+    background-color: #fff;
+    color: #005fee;
+  }
